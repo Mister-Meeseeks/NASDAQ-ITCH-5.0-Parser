@@ -8,7 +8,7 @@ projectName=NASDAQ-ITCH-Parser
 
 mainClass=Parse
 shareDir=$(target)
-installDir=$(shareDir)/$(projectName)/
+installDir=$(shareDir)/$(projectName)/java/
 installClass=$(installDir)/Parse.java
 
 build: src/$(mainClass).class
