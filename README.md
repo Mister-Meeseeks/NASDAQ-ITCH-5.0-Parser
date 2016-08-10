@@ -10,7 +10,7 @@ Thanks to Quannabe. I just modified the YAML file for the nerw ITCH 5.0 format.
 
 ## Quickstart
 
-Code can be built with GNU Make. From the top-level directory call.
+Code can be built with GNU Make. Navigate to the repo's top-level directory call.
 
 ```
   make
@@ -24,15 +24,21 @@ This will compile Java bytecode in the src directory. To run program navigate to
 
 (Path can be left blank to read from stdin.)
  
-## Run Code
+## Install
 
-Compile the code and run it. Navigate to the src directory and run the following commands in your terminal. 
+To permanetely install. Naviage to the repo's top-level directory and call:
 
 ```
-  javac Parse.java
+  make install
+```
 
+This installs the compiled java byte code to ```/usr/local/share/```. To run, add ```/usr/local/share/NASDAQ-ITCH-Parser``` to the Java classpath.
 
+To install to a different directory call:
 
+```
+  make install target=[target directory]
+```
 
 ## ITCH Format Variations
 
