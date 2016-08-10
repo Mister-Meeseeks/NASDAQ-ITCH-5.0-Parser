@@ -1,13 +1,13 @@
 
-ifndef install
-	install=/usr/local/share/
+ifndef target
+	target=/usr/local/share/
 endif
-export install
+export target
 
 projectName=NASDAQ-ITCH-Parser
 
 mainClass=Parse
-shareDir=$(install)
+shareDir=$(target)
 installDir=$(shareDir)/$(projectName)/
 installClass=$(installDir)/Parse.java
 
